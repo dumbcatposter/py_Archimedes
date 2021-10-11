@@ -27,10 +27,10 @@ def calculateInnerRadius(points):
     return sqrt(midpoint[0]**2 + midpoint[1]**2)
 
 def about():
-    sg.popup("Archimedes found a pretty accurate value for π by drawing polygons with more and more sides, both inside and outside of a circle. He knew that π would lie between the perimeter of the inside polygon and the outside polygon. Here, by inputting different values for the number of sides, you can draw inscribed polygons on a circle with radius 1. The value of the perimeter will approach 2π, since the circle's diameter is two.", title="Check it!")
+    sg.popup("Archimedes found a pretty accurate value for π by drawing polygons with more and more sides, both inside and outside of a circle. He knew that π would lie between the perimeter of the inside polygon and the outside polygon. Here, by inputting different values for the number of sides, you can draw a polygon with an inscribed and circumscribed circle. The value of the perimeters will approach 2π, since the circles' diameter is two.", title="Check it!")
 
 def loop(window):
-    # Event Loop c
+    # Event Loop
     while True:
         event, values = window.read()
         if event == sg.WIN_CLOSED or event == 'Exit': # if user closes window or clicks the "Exit" button
